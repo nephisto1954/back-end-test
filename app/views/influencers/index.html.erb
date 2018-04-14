@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="left-container">
+  <h2>Suggested Influencers</h2>
+  </div>
+
+
+  <div class="right-container">
+    <h2>Starred Influencers</h2>
+    <% @influencers.each do |influencer| %>
+      <div class="card">
+        <img class="avatar" src="<%=influencer.instagram_img%>">
+        <div class="info">
+          <div class="left">
+            <p><%= influencer.full_name %></p>
+            <p><i class="fab fa-instagram"></i> <%= influencer.instagram_username %></p>
+          </div>
+          <div class="right">
+            <div class="followers">
+              <p><%= influencer.followers %></p>
+              <p>Followers</p>
+            </div>
+            <div class="engagement">
+              <p><%= influencer.engagement %>%</p>
+              <p>Engagement</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

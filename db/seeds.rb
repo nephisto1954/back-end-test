@@ -1,3 +1,5 @@
+Influencer.destroy_all
+
 
 Influencer.create(full_name: 'Anna Griffin', instagram_username: "anna_griffin_123", instagram_img: "https://randomuser.me/api/portraits/women/6.jpg",followers: 21231, engagement: 6.84)
 Influencer.create(full_name: 'Melissa Peterson', instagram_username: "melissa_peterson", instagram_img: "https://randomuser.me/api/portraits/women/84.jpg",followers: 5122, engagement: 5.23)
