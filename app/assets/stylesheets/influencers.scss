@@ -30,24 +30,62 @@
   border-top-left-radius: 50px;
   border-bottom-left-radius: 50px;
   background-color: #FAFAFA;
+  padding-right: 0px;
+  margin-left: 20px;
 }
 
 .avatar{
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  padding-left: 5px;
+  padding-top: 5px;
+}
+
+.gradient {
+  background: #cc2366;
+  background: linear-gradient(100deg, #7492E7 0%,#7492E7 25%,#7492E7 50%,#cc2366 75%,#cc2366 100%);
   width: 80px;
   height: 80px;
-  border-radius: 100%
+  border-radius: 100px;
+  justify: center;
 }
 
 .info {
   justify-content: space-between;
   display: flex;
-  width: 50vw
+  width: 55vw;
+  margin-right: 0px;
+  padding-left: 10px;
 }
 
 .right{
   display: flex;
 }
 
+.engagement {
+  padding-left: 20px;
+  padding-right: 0px;
+  text-align: center;
+}
+
+.followers {
+  padding-left: 20px;
+  text-align: center;
+}
+
+
 p {
-  margin: 10px
+  margin: 5px;
+  color: #9D9D9D;
+}
+
+h3 {
+  margin: 5px;
+  margin-top: 10px;
+}
+
+h1 {
+  margin-left: 20px;
+  margin-bottom: 40px;
 }
