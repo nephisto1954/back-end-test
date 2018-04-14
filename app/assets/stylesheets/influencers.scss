@@ -21,15 +21,12 @@
 
 
 .card {
-  border: 1px solid #717C96;
   padding-left: 0px;
   margin: 10px;
   width: 60vw;
   display: flex;
   height: 8vh;
-  border-top-left-radius: 50px;
-  border-bottom-left-radius: 50px;
-  background-color: #FAFAFA;
+  // background-color: #FAFAFA;
   padding-right: 0px;
   margin-left: 20px;
 }
@@ -38,25 +35,38 @@
   width: 70px;
   height: 70px;
   border-radius: 100%;
-  padding-left: 5px;
-  padding-top: 5px;
+  padding-left: 4px;
+  padding-top: 4px;
+
 }
 
 .gradient {
   background: #cc2366;
   background: linear-gradient(90deg, #7492E7 0%,#7492E7 25%,#D39298 50%,#D39298 75%,#D39298 100%);
-  width: 80px;
-  height: 80px;
+  width: 77px;
+  height: 77px;
   border-radius: 100px;
   justify: center;
+}
+
+.left-side {
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-top: 1px solid #717C96;
+  border-bottom: 1px solid #717C96;
+  background-color: #FAFAFA;
 }
 
 .info {
   justify-content: space-between;
   display: flex;
-  width: 55vw;
+  width: 45vw;
   margin-right: 0px;
   padding-left: 10px;
+  background-color: #FAFAFA;
+  border: 1px solid #717C96;
+  border-left: 0px;
+
 }
 
 .right{
@@ -72,6 +82,13 @@
 .followers {
   padding-left: 20px;
   text-align: center;
+}
+
+.remove{
+  background-color: white;
+  color: #9D9D9D;
+  border: none;
+  width: 50px;
 }
 
 
