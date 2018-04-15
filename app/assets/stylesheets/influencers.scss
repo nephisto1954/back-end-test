@@ -31,7 +31,7 @@
   margin-left: 20px;
 }
 
-.avatar{
+.starred-avatar{
   width: 70px;
   height: 70px;
   border-radius: 100%;
@@ -40,7 +40,7 @@
 
 }
 
-.gradient {
+.starred-gradient {
   background: #cc2366;
   background: linear-gradient(90deg, #7492E7 0%,#7492E7 25%,#D39298 50%,#D39298 75%,#D39298 100%);
   width: 77px;
@@ -57,7 +57,7 @@
   background-color: #FAFAFA;
 }
 
-.info {
+.starred-info {
   justify-content: space-between;
   display: flex;
   width: 45vw;
@@ -66,23 +66,22 @@
   background-color: #FAFAFA;
   border: 1px solid #717C96;
   border-left: 0px;
+  .right{
+    display: flex;
+  }
 
+  .engagement {
+    padding-left: 20px;
+    padding-right: 0px;
+    text-align: center;
+  }
+
+  .followers {
+    padding-left: 20px;
+    text-align: center;
+  }
 }
 
-.right{
-  display: flex;
-}
-
-.engagement {
-  padding-left: 20px;
-  padding-right: 0px;
-  text-align: center;
-}
-
-.followers {
-  padding-left: 20px;
-  text-align: center;
-}
 
 .remove{
   background-color: white;
@@ -91,6 +90,38 @@
   width: 50px;
 }
 
+.suggested-info {
+  width: 15vw;
+}
+
+.suggested-avatar{
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  padding-left: 4px;
+  padding-top: 4px;
+
+}
+
+.suggested-gradient {
+  background: #cc2366;
+  background: linear-gradient(90deg, #7492E7 0%,#7492E7 25%,#D39298 50%,#D39298 75%,#D39298 100%);
+  width: 77px;
+  height: 77px;
+  border-radius: 100px;
+  justify: center;
+}
+
+.suggested-left-side {
+  padding-left: 3vw;
+}
+
+.add{
+  background-color: white;
+  color: #9D9D9D;
+  border: none;
+  width: 50px;
+}
 
 p {
   margin: 5px;

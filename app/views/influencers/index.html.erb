@@ -1,19 +1,33 @@
 <div class="container">
   <div class="left-container">
   <h1>Suggested Influencers</h1>
+  <% @influencers.each do |influencer| %>
+      <div class="card">
+        <div class="suggested-left-side">
+          <div class="suggested-gradient">
+            <img class="suggested-avatar" src="<%=influencer.instagram_img%>">
+          </div>
+        </div>
+        <div class="suggested-info">
+          <div class="left">
+            <h3><%= influencer.full_name %></h3>
+            <p><i class="fab fa-instagram"></i> <%= influencer.instagram_username %></p>
+          </div>
+        </div>
+        <button class="add"><i class="fas fa-plus"></i></button>
+      </div>
+    <% end %>
   </div>
-
-
   <div class="right-container">
     <h1>Starred Influencers</h1>
     <% @influencers.each do |influencer| %>
       <div class="card">
         <div class="left-side">
-          <div class="gradient">
-            <img class="avatar" src="<%=influencer.instagram_img%>">
+          <div class="starred-gradient">
+            <img class="starred-avatar" src="<%=influencer.instagram_img%>">
           </div>
         </div>
-        <div class="info">
+        <div class="starred-info">
           <div class="left">
             <h3><%= influencer.full_name %></h3>
             <p><i class="fab fa-instagram"></i> <%= influencer.instagram_username %></p>
