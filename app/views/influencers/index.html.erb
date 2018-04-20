@@ -1,8 +1,8 @@
 <div class="container">
   <div class="left-container">
   <h1>Suggested Influencers</h1>
-  <% @influencers.each do |influencer| %>
-      <div class="card">
+  <% @influencers.each_with_index do |influencer, index| %>
+      <div class="suggested-card" id="suggested-card-<%= index %>">
         <div class="suggested-left-side">
           <div class="suggested-gradient">
             <img class="suggested-avatar" src="<%=influencer.instagram_img%>">
@@ -14,14 +14,14 @@
             <p><i class="fab fa-instagram"></i> <%= influencer.instagram_username %></p>
           </div>
         </div>
-        <button class="add"><i class="fas fa-plus"></i></button>
+        <button class="add" id="suggested-btn-<%= index %>"><i class="fas fa-plus"></i></button>
       </div>
     <% end %>
   </div>
   <div class="right-container">
     <h1>Starred Influencers</h1>
-    <% @influencers.each do |influencer| %>
-      <div class="card">
+    <% @influencers.each_with_index do |influencer, index| %>
+      <div class="starred-card" id="starred-card-<%= index %>" style="display: none;">
         <div class="left-side">
           <div class="starred-gradient">
             <img class="starred-avatar" src="<%=influencer.instagram_img%>">
@@ -43,8 +43,121 @@
             </div>
           </div>
         </div>
-        <button class="remove"><i class="fas fa-times"></i></button>
+        <button class="remove" id="starred-btn-<%= index %>"><i class="fas fa-times"></i></button>
       </div>
     <% end %>
+    <script src="" ></script>
+
+    <script>
+      $(function(){
+
+        $('#suggested-btn-0').on('click', function(){
+          $('#suggested-card-0').fadeOut(200);
+          $('#starred-card-0').toggle(200);
+        })
+
+        $('#suggested-btn-1').on('click', function(){
+          $('#suggested-card-1').fadeOut(200);
+          $('#starred-card-1').toggle(200);
+        })
+
+        $('#suggested-btn-2').on('click', function(){
+          $('#suggested-card-2').fadeOut(200);
+          $('#starred-card-2').toggle(200);
+        })
+
+        $('#suggested-btn-3').on('click', function(){
+          $('#suggested-card-3').fadeOut(200);
+          $('#starred-card-3').toggle(200);
+        })
+
+        $('#suggested-btn-4').on('click', function(){
+          $('#suggested-card-4').fadeOut(200);
+          $('#starred-card-4').toggle(200);
+        })
+
+        $('#suggested-btn-5').on('click', function(){
+          $('#suggested-card-5').fadeOut(200);
+          $('#starred-card-5').toggle(200);
+        })
+
+        $('#suggested-btn-6').on('click', function(){
+          $('#suggested-card-6').fadeOut(200);
+          $('#starred-card-6').toggle(200);
+        })
+
+        $('#suggested-btn-7').on('click', function(){
+          $('#suggested-card-7').fadeOut(200);
+          $('#starred-card-7').toggle(200);
+        })
+
+        $('#suggested-btn-8').on('click', function(){
+          $('#suggested-card-8').fadeOut(200);
+          $('#starred-card-8').toggle(200);
+        })
+
+        $('#suggested-btn-9').on('click', function(){
+          $('#suggested-card-9').fadeOut(200);
+          $('#starred-card-9').toggle(200);
+        })
+
+
+
+        $('#starred-btn-0').on('click', function(){
+          $('#starred-card-0').fadeOut(200);
+          $('#suggested-card-0').toggle(200);
+        })
+
+        $('#starred-btn-1').on('click', function(){
+          $('#starred-card-1').fadeOut(200);
+          $('#suggested-card-1').toggle(200);
+        })
+
+        $('#starred-btn-2').on('click', function(){
+          $('#starred-card-2').fadeOut(200);
+          $('#suggested-card-2').toggle(200);
+        })
+
+        $('#starred-btn-3').on('click', function(){
+          $('#starred-card-3').fadeOut(200);
+          $('#suggested-card-3').toggle(200);
+        })
+
+        $('#starred-btn-4').on('click', function(){
+          $('#starred-card-4').fadeOut(200);
+          $('#suggested-card-4').toggle(200);
+        })
+
+        $('#starred-btn-5').on('click', function(){
+          $('#starred-card-5').fadeOut(200);
+          $('#suggested-card-5').toggle(200);
+        })
+
+        $('#starred-btn-6').on('click', function(){
+          $('#starred-card-6').fadeOut(200);
+          $('#suggested-card-6').toggle(200);
+        })
+
+        $('#starred-btn-7').on('click', function(){
+          $('#starred-card-7').fadeOut(200);
+          $('#suggested-card-7').toggle(200);
+        })
+
+        $('#starred-btn-8').on('click', function(){
+          $('#starred-card-8').fadeOut(200);
+          $('#suggested-card-8').toggle(200);
+        })
+
+        $('#starred-btn-9').on('click', function(){
+          $('#starred-card-9').fadeOut(200);
+          $('#suggested-card-9').toggle(200);
+        })
+
+
+
+      });
+
+
+    </script>
   </div>
 </div>

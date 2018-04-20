@@ -20,7 +20,7 @@
 }
 
 
-.card {
+.suggested-card {
   padding-left: 0px;
   margin: 10px;
   width: 60vw;
@@ -30,6 +30,18 @@
   padding-right: 0px;
   margin-left: 20px;
 }
+
+.starred-card {
+  padding-left: 0px;
+  margin: 10px;
+  width: 60vw;
+  display: flex;
+  height: 8vh;
+  // background-color: #FAFAFA;
+  padding-right: 0px;
+  margin-left: 20px;
+}
+
 
 .starred-avatar{
   width: 70px;
